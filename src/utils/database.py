@@ -21,3 +21,4 @@ def query(sql_statement: str, **kwargs):
 def query_from_file(sql_file: str, **kwargs):
     with open(sql_file, 'r') as f:
         return query(f.read(), **kwargs)
+
