@@ -5,6 +5,7 @@ with receipts as (
          , (jsonb_array_elements(items) ->> 'itemId'):: uuid        as item_id
          , jsonb_array_elements(items) -> 'unitAmount'->> 'amount'  as item_price
          , updated_date
+         , transaction_date
          , location_id
          , total_amount
     from analytics.int_receipts_without_bank
@@ -18,4 +19,4 @@ select r.*
 from receipts r
 left join items.items i
     on r.item_id = i.id
-where r.updated_date between '01-SEP-20'::date and '31-DEC-20'::date
+--where r.updated_date between '01-JUN-20'::date and '31-DEC-20'::date
