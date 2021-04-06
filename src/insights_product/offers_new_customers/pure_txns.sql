@@ -8,6 +8,7 @@ with receipts as (
          , transaction_date
          , location_id
          , total_amount
+         , items_per_basket
     from analytics.int_receipts_without_bank
     where merchant_id in (select id
                           from merchants.merchants
