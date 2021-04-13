@@ -1,6 +1,6 @@
 # adhoc-analysis 📊
 
-Requirements
+### Requirements
 Currently the main requirements are python3 >= 3.8, and postgres. Both can installed using brew
 
 $ brew install python
@@ -16,7 +16,7 @@ And start Jupyter like so:
 (venv) $ make jupyter
 This will set up the PYTHONPATH and set PROJECTROOT which allow use of the utils module.
 
-Database
+### Database
 If you want Jupyter notebooks to connect to the DB you'll need to:
 
 Copy the sample credentials file to .credentials and add your replica username and password to it.
