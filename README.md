@@ -1,1 +1,1 @@
-# adhoc-analysis
+# adhoc-analysis 📊
