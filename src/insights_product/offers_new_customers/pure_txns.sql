@@ -20,4 +20,3 @@ select r.*
 from receipts r
 left join items.items i
     on r.item_id = i.id
---where r.updated_date between '01-JUN-20'::date and '31-DEC-20'::date

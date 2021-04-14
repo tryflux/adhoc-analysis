@@ -7,4 +7,3 @@ from receipts.transactions
 where merchant_id in (select id
                       from merchants.merchants
                       where lower(name) like '%pure%')
---and adjusted_transaction_date between '01-JUN-19'::date and '31-DEC-19'::date
